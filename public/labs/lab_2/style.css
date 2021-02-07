@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color:rgb(12, 100, 12);
+  background-color:rgb(136, 207, 136);
   padding: 1%;
 }
 
@@ -79,6 +79,7 @@ h1 {
   height: 60px;
   padding-top: 20.15px;
   padding-bottom: 30.15px;
+  
 }
 
 nav {
@@ -118,12 +119,17 @@ nav a, nav span {
   display: flex;
 }
 
-.photos{
 
-  padding: 20px 20px  20px;
- 
+.article{
+  width: 385px;
+  float: left;
 }
 
+.photos{
+  
+  background-color: rgba(0, 255, 0, 0.89);
+ 
+}
 .article, .section {
   flex: 4;
 }
