@@ -20,7 +20,7 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Roman';
   color: #2a2a2a;
 }
 
@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color: red;
+  background-color:rgb(12, 100, 12);
   padding: 1%;
 }
 
@@ -78,12 +78,14 @@ h1 {
   display: block;
   height: 60px;
   padding-top: 20.15px;
+  padding-bottom: 30.15px;
 }
 
 nav {
   height: 50px;
   flex: 100%;
   display: flex;
+  
 }
 
 nav ul {
@@ -116,6 +118,12 @@ nav a, nav span {
   display: flex;
 }
 
+.photos{
+
+  padding: 20px 20px  20px;
+ 
+}
+
 .article, .section {
   flex: 4;
 }
@@ -132,8 +140,8 @@ nav a, nav span {
 }
 
 .aside img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 50%;
 }
 
 .footer {
