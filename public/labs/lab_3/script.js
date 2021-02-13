@@ -1,27 +1,25 @@
 /* Put your javascript in here */
-const slideArray = [];
-for (let i = 0; i < document.querySelectorAll('.slider div').length; i++) {
-    slideArray.push(document.querySelectorAll('.slider div')[i].dataset.background);
-}
 
-let currentSlideIndex = -1;
+const img_con = document.getElementById('img-con'); 
+	 const next = document.getElementById('next');
+	 const prev = document.getElementById('prev');
 
-function advanceSliderItem() {
-    currentSlideIndex++;
+	  const images = ['a.png', 'b.png', 'c.png', 'd.png', 'e.png', 'f.png', 'g.png']
 
-    if (currentSlideIndex >= slideArray.length) {
-        currentSlideIndex = 0;
+	  let i = images.length;
+
+
+    // function for next slide 
+
+    next.onclick = ()=> {
+    	 i = (i<images.length) ?(i= i+1):(i=1);
+    	 img_con.innerHTML = "<img class='img' src=images/"+images[i-1]+">";
     }
+       
 
-    document.querySelector('.slider').style.cssText = 'background: url("' + slideArray[currentSlideIndex] + '") no-repeat center center; background-size: cover;';
-
-    const elems = document.getElementsByClassName('caption');
-    for (let i = 0; i < elems.length; i++) {
-        elems[i].style.cssText = 'opacity: 0;';
+    // function for prew slide
+    
+    prev.onclick = ()=> {
+    	 i = (i<images.length+1 && i>1) ?(i= i-1):(i=images.length);
+    	 img_con.innerHTML = "<img class='img' src=images/"+images[i-1]+">";
     }
-
-    const currentCaption = document.querySelector('.caption-' + (currentSlideIndex));
-        currentCaption.style.cssText = 'opacity: 1;';
-    }
-
-    let intervalID = setInterval(advanceSliderItem, 3000);
