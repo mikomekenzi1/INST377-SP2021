@@ -15,7 +15,7 @@ function mapInit() {
     // gets the data and inits the needed html elements
     const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
     const form = document.querySelector('.userform');
-    const search = document.querySelector('#search_value');
+    const search = document.querySelector('#search_item');
     const targetList = document.querySelector('.target-list');
   
     // structures the recieved data into json
