@@ -20,12 +20,12 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Roman';
+  font-family: 'Raleway', sans-serif;
   color: #2a2a2a;
 }
 
 p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #2a2a2a;
 }
 
@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color:rgb(136, 207, 136);
+  background-color: red;
   padding: 1%;
 }
 
@@ -78,15 +78,12 @@ h1 {
   display: block;
   height: 60px;
   padding-top: 20.15px;
-  padding-bottom: 30.15px;
-  
 }
 
 nav {
   height: 50px;
   flex: 100%;
   display: flex;
-  
 }
 
 nav ul {
@@ -119,17 +116,6 @@ nav a, nav span {
   display: flex;
 }
 
-
-.article{
-  width: 385px;
-  float: left;
-}
-
-.photos{
-  
-  background-color: rgba(0, 255, 0, 0.89);
- 
-}
 .article, .section {
   flex: 4;
 }
@@ -146,8 +132,8 @@ nav a, nav span {
 }
 
 .aside img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto;
 }
 
 .footer {
